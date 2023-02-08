@@ -1,0 +1,51 @@
+managed implementation in class zbp_i_employee unique;
+strict ( 2 );
+with draft;
+
+define behavior for ZI_EMPLOYEE alias EMPLOYEE
+persistent table ztemp_master
+draft table zdr_emp_master
+lock master
+
+total etag Locallastchangedat
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+//  draft action ( Edit, Activate, Discard, Resume);
+
+  draft action Edit;
+  draft action Activate;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+
+  field ( numbering : managed, readonly )
+  Id;
+
+  field (readonly)
+  Genderdesc;
+
+  field (mandatory : create, readonly : update)
+  Empno;
+
+  action ( features : instance ) setVacation result [1] $self;
+
+  mapping for ZTEMP_MASTER
+  {
+    Id = id;
+    Empno = empno;
+    Name = name;
+    Workdept = workdept;
+    Phoneno = phoneno;
+    Hiredate = hiredate;
+    Job = job;
+    Edlevel = edlevel;
+    Sex = sex;
+    Onduty = onduty;
+    Birthdate = birthdate;
+  }
+}

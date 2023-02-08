@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SIA6" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SIA6>
+    <MAIN_OBJECT>
+     <NAME>ZEMP_IAM_EXT2_EXT</NAME>
+     <TYPE>SIA6</TYPE>
+     <DESCRIPTION>IAM App for Employee Manage Ver2</DESCRIPTION>
+     <RESPONSIBLE>CB9980000011</RESPONSIBLE>
+     <MASTER_LANGUAGE>KO</MASTER_LANGUAGE>
+     <MASTER_SYSTEM>YOM</MASTER_SYSTEM>
+     <PACKAGE_REF>
+      <PACKAGE_NAME>ZEMP_MANAGE</PACKAGE_NAME>
+     </PACKAGE_REF>
+     <ABAP_LANGU_VERSION>5</ABAP_LANGU_VERSION>
+    </MAIN_OBJECT>
+    <APP_ID>ZEMP_IAM_EXT2_EXT</APP_ID>
+    <APP_TYPE>EXT</APP_TYPE>
+    <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
+    <SERVICE>
+     <item>
+      <REL_NAME>ZUI_EMPOYEE_V4</REL_NAME>
+      <REL_TYPE>G4BA</REL_TYPE>
+      <APP_ID>ZEMP_IAM_EXT2_EXT</APP_ID>
+      <SRVC_NAME>617C67B98D5C71646CEB8E3EEE346F</SRVC_NAME>
+      <SRVC_TYPE>HT</SRVC_TYPE>
+      <TEXT>0</TEXT>
+      <TYPE_TEXT>OData V4</TYPE_TEXT>
+     </item>
+    </SERVICE>
+   </SIA6>
+  </asx:values>
+ </asx:abap>
+</abapGit>
